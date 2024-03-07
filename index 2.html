@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/806a217428.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/amor.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.modal-S {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal_S {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 0;
+}
+
+.modal p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+.boton {
+  background-color: #47a386;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+</style>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Daniel Cabrera</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mi</a></li>
+                    <li><a href="#linea.html">linea de tiempo</a></li>
+                    <li><a href="#curriculum">inventario</a></li>
+                    <li><a href="#foda">Foda</a></li>
+                    <li><a href="biografia.html">biografia</a></li>
+                    <li><a href="#gracias.html#">Agradecimiento</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto2.jpeg" alt="">
+            </div>
+            <h1>Byron Daniel</h1>
+            <h2>Cabrera Salvajan</h2>
+        </div>
+    </section>
+    <!-- sueño, mision, vision -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>visión</h2>
+            <p><span>Mi visión</span>ser una persona lider en el campo e la tecnología implica no solo aquirir habilidades técnicas excepcionales, sino también cultivar una vision innovadora y un compromiso constante
+            con el aprendizaje. Ser líder en este ámbito significa etar a la vanguardia de las tendencias tecnologícas, anticipar cambios y contribuir activamente al desarrollo de nuevas tecnologias y aplicaiones.
+          Es necesario no solo buscar el écito individual, sino también trabajar colaboraticamente, liderando equipos multidisciplinarios para maximizar el impacto positivo en la sociedad</p>
+            <h2>Misión</h2>
+                <p><span>Soy una persona </span> soy un explorador incansable en el vasto universo de la tecnología, siempre sediento de conocimientos y ansioso por descubriri nuevas fronteras. Mis circuitos
+                están cableados con la pasión poa la innovación y la creatividad, impulsandome a desentrañar los misterios del código y las complejidades de los algoritmos. Como estudiante de las máquinas, mi
+              objetivo es forjar un camino hacia el cambio, no solo en términos de código y algoritmos, sino también en el corazón de los equipos. Mi voz resuena con ideas audaces y visiones del futuro tecnológico,
+            guiando a mis compañeros hacia horizontes inexploradoss.</p>        
+                <div class="fila">
+                    <!-- metas -->
+                    <div class="col_v">
+                        <h3>Metas a corto plazo</h3>
+                        <ul>
+                            <li><strong>Obtener calificaciones altas en materias clave es fundamental para mí porque reconozco que el conocimiento profundo en estos campos es la base para construir una carrera sólida y exitosa.</strong></li>
+                            <li><strong>Para mí, participar en actividades extracurriculares y voluntariado es esencial porque estas experiencias van más allá de la educación formal y enriquecen mi vida de varias maneras.</strong></li>
+                            <li><strong>Mejorar las habilidades de comunicación y presentación en Público</strong></li>
+                        </ul>
+                        <h3>Metas a mediano plazo</h3>
+                        <ul>
+                            <li><strong>conseguir un trabajo en una empresa líder en tecnología</strong></li>
+                            <li><strong>continuar con estudios universitarios en el campo de la tecnología</strong></li>
+                            <li><strong>Identificaré áreas específicas de la informática que me interesan y buscaré certificaciones adicionales para destacarme en esas áreas y mejorar mis perspectivas de empleo.</strong></li>
+              
+                        </ul>
+                        <h3>Metas a largo plazo</h3>
+                        <ul>
+                            <li><strong>emprender y crear una empresa exitosa porque tengo una visión clara de cómo puedo aportar valor al mundo y hacer una diferencia significativa.</strong></li>
+                            <li><strong>contribuir a la creación de nuevas tecnologías que tengan impacto positivo en la sociedad.</strong></li>
+                            <li><strong>ser reconocido como experto en el campo de la tecnologia en el ambito infomatico</strong></li>
+                        </ul>
+                    </div>
+                    <!-- valores -->
+                    <div class="col_v">
+                        <h3>Valores</h3>
+                        <div class="contenedor-valores">
+                            
+                            <div class="valor" data-toggle="modal" data-target="#exampleModal1">
+                                <i class="fa-solid fa-people-carry-box"></i>
+                                <span>Solidaridad</span>
+                            </div>
+                            <div class="valor" data-toggle="modal" data-target="#exampleModal2">
+                                <i class="fa-solid fa-handshake"></i>
+                                <span>Respeto</span>
+                            </div>
+                            <div class="valor" data-toggle="modal" data-target="#exampleModal3">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                                <span>Empatía</span>
+                            </div>
+                            <div class="valor" data-toggle="modal" data-target="#exampleModal4">
+                                <i class="fa-solid fa-face-smile-beam"></i>
+                                <span>Honestidad</span>
+                            </div>
+                            <div class="valor" data-toggle="modal" data-target="#exampleModal5">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                                <span>Gratitud</span>
+                            </div>
+                            <div class="valor" data-toggle="modal" data-target="#exampleModal6">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                                <span>Justicia</span>
+                            </div>
+                            <div class="valor"  data-toggle="modal" data-target="#exampleModal7">
+                                <i class="fa-solid fa-shield-heart"></i>
+                                <span>Equidad</span>
+                            </div>
+                            <div class="valor" data-toggle="modal" data-target="#exampleModal8">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>Autenticidad</span>
+                            </div>
+                            <div class="valor" data-toggle="modal" data-target="#exampleModal9">
+                                <i class="fa-solid fa-face-grin-beam-sweat"></i>
+                                <span>Integridad</span>
+                            </div>
+                            <div class="valor" data-toggle="modal" data-target="#exampleModal10">
+                                <i class="fa-regular fa-hand-point-up"></i>
+                                <span>Humildad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+      <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Solidaridad</h1>
+            </div>
+            <div class="modal-body">
+              
+              <p>
+                Solidaridad: se refiere a compartir, a aplicar a los demás lo que creemos que es bueno para uno. <br>
+                <span>me identifico con la Solidaridad porque gusta ayudar a los demás.</span>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Respeto</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Respeto. Es la capacidad de aceptar la dignidad de otros.En algunos casos,
+                el respeto está asociado a la sumisión o la distancia.siempre trato de respetar 
+                 a los demás porque no me gusta que me molesten.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Empatía</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Empatía. Es la capacidad de comprender los sentimientos y pensamientos ajenos, 
+                la situación por la que pasan otras personas, aunque sea diferente a la propia.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Honestidad</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Honestidad. Quien tiene como valor la honestidad no sólo evita la mentira, 
+                sino que también su conducta es congruente con lo que dice y piensa.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Gratitud</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Gratitud. Reconocer a quienes nos han prestado ayuda o nos han beneficiado, 
+                incluso involuntariamente.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Justicia</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Justicia. Considerar la justicia como valor es buscar que cada uno reciba lo que merece.
+                Me identifico : porque amo la justicia y necesito defenderla hasta con mi propia vida.
+
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Equidad</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Equidad. Buscar la justicia distributiva y tratar a las personas con imparcialidad, garantizando igualdad de oportunidades.
+    </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel"> Autenticidad</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Autenticidad. ser fiel a uno mismo, actuar de acuerdo con los propios valores y principios, siendo genuino.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Integridad</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Integridad. Mantener coherencia y consistencia entre los principios éticos y las acciones personales.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Humildad</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Humildad. Reconocer las propias limitaciones y estar abierto a aprender de los demás, demostrando modestia.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="foda" class="foda">
+        <div class="contenedor-valores">
+          <h1>FODA</h1>
+         <div class="foda1">
+          <div class="FODA" data-toggle="modal" data-target="#exampleModalF">
+            <i class="fa-solid fa-dumbbell"></i>
+              <span>Fortalezas</span>
+          </div>
+          <div class="FODA" data-toggle="modal" data-target="#exampleModalO">
+            <i class="fa-solid fa-lightbulb"></i>
+              <span>Oportunidades</span>
+          </div>
+         </div>
+         <div class="foda2">
+          <div class="FODA" data-toggle="modal" data-target="#exampleModalD">
+            <i class="fa-solid fa-heart-crack"></i>
+              <span>Debilidades</span>
+          </div>
+          <div class="FODA" data-toggle="modal" data-target="#exampleModalA">
+            <i class="fa-solid fa-bomb"></i>
+              <span>Amenazas</span>
+          </div>
+         </div>
+        </div>
+      </section>
+      <!-- Foda modales -->
+      <div class="modal fade" id="exampleModalF" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Fortalezas</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+              1. Conocimientos Técnicos:
+
+              Poseo sólidos conocimientos en informática adquiridos a lo largo de mi carrera.
+              Competente en programación, sistemas operativos y herramientas de desarrollo. <br> 
+              2. Habilidades Analíticas:
+
+              Capacidad para analizar problemas complejos y encontrar soluciones eficientes.
+              Destreza en el pensamiento lógico y resolución de algoritmos. <br>
+              3. Autodidacta:
+
+              Tengo la habilidad de aprender de manera autónoma, lo que me permite estar al tanto de las últimas tendencias y tecnologías.<br>
+             
+            </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalO" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Oportunidades</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+              1. Avances Tecnológicos:
+
+              La constante evolución tecnológica me brinda la oportunidad de explorar nuevas áreas de interés y actualizarme constantemente.<br> 
+              2. Networking:
+
+              Participar en eventos, conferencias y actividades relacionadas con la informática me permite establecer conexiones valiosas y aprender de profesionales de la industria. <br>
+              3. Proyectos Escolares:
+
+              La variedad de proyectos en la escuela ofrece oportunidades para aplicar mis conocimientos en situaciones prácticas y ganar experiencia. <br>
+            
+            </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalD" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Debilidades</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                1. Gestión del Tiempo:
+
+                A veces, tengo dificultades para gestionar eficientemente mi tiempo, lo que podría afectar mi productividad en proyectos y tareas.<br>
+                2. Falta de Experiencia Laboral:
+
+                Aunque tengo una sólida base teórica, la falta de experiencia laboral podría ser una limitación al ingresar al campo profesional.<br>
+                3. Zonas de Mejora Técnica:
+
+                Identifico áreas específicas, como ciertos lenguajes de programación, donde podría mejorar mis habilidades técnicas. <br>
+              
+            </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal_S">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Amenazas</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                1. Competencia en el Mercado Laboral:
+
+                La creciente competencia en el campo de la informática podría representar un desafío al buscar oportunidades laborales.<br>
+                2. Rápido Avance Tecnológico:
+
+                El ritmo acelerado de cambio tecnológico puede resultar abrumador y requerir un esfuerzo constante para mantenerse actualizado.<br>
+                3. Presión Académica:
+
+                La carga académica intensa podría generar estrés y afectar mi rendimiento en ciertos momentos. <br>
+            </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- inventario -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Inventario personal</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <div class="item izq">
+              <h4>Comida</h4>
+              <p>
+              Estofado <br>
+              Hamburguesas <br>
+              Alitas  <br>
+              pizza  <br>
+              Pollo  <br>
+      
+ 
+              </p>
+              <div class="conectori">
+                <div class="circuloi">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Académico</h4>
+              <span>Escuela número uno (Sumpango, Sacatepequez)</span> <br>
+              <span>Colegio renacer (Sumpango, Sacatepequez)</span> <br>
+              <span>Centro educativo judá (Sumpango, Sacatepequez)</span> <br>
+              <span>Colegio sagrado Corazón (Sumpango, Sacatepequez)</span> <br>
+              <span>Liceo ICC (Chimaltenango, Chimaltenango)</span> <br>
+              <div class="conectori">
+                <div class="circuloi">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Bebidas</h4>
+              <span>Bebidas energéticas</span> <br>
+              <span>Coca cola</span> <br>
+              <span>Agua pura</span> <br>
+              <span>Jugos</span> <br>
+              <span>Proteína</span> <br>
+
+              <div class="conectori">
+                <div class="circuloi">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Cancioness</h4>
+              <span>Birds (Imagine dragons)</span> <br>
+              <span>No digas nada (latin mafia)</span> <br>
+              <span>Enamorado tuyo (Cuarteto de nos)</span> <br>
+              <span>21 question (50 cent)</span> <br>
+              <span>Superman (eminem)</span> <br>
+
+              <div class="conectori">
+                <div class="circuloi">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Libros</h4>
+              <span>Don quijote de la mancha</span> <br>
+              <span>Movimientos (Luis Eduardo Rivera)</span> <br>
+              <span>El principito</span> <br>
+              <span>su último viaje</span> <br>
+              <span>Alex dog boy</span> <br>
+        
+              <div class="conectori">
+                <div class="circuloi">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Derecha  -->
+          <div class="col derecha">
+            <div class="item der">
+              <h4>Ropa</h4>
+              <span>Deportivo</span> <br>
+              <span>Casual</span> <br>
+              <span>Overzice</span> <br>
+              <span>Minimalista</span> <br>
+              <span>Urbano</span> <br>
+              <div class="conectord">
+                <div class="circulod">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>objetos</h4>
+              <span>Teléfono</span> <br>
+              <span>Guitarra</span> <br>
+              <span>Computadora</span> <br>
+              <span>Ropa</span> <br>
+              <span>Gorras</span> <br>
+
+              <div class="conectord">
+                <div class="circulod">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Enfermedad</h4>
+              <span>Varicela</span> <br>
+            
+              <div class="conectord">
+                <div class="circulod">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Animales</h4>
+              <span>Perros</span> <br>
+              <span>Gatos</span> <br>
+              <span>Pollos</span> <br>
+              <span>Patos</span> <br>
+              <span>Conejos</span> <br>
+              <div class="conectord">
+                <div class="circulod">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Emociones</h4>
+              <span>Feliz</span> <br>
+              <span>Diversion</span> <br>
+              <span>Curioso</span> <br>
+              <span>Optimista</span> <br>
+              <span>Tranquilo</span> <br>
+            
+              <div class="conectord">
+                <div class="circulod">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <!-- Sucesos importantes -->
+      <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+          <h2>Sucesos importantes</h2>
+          <div class="galeria">
+            <div class="suceso">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
